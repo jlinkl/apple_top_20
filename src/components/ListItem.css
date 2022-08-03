@@ -1,0 +1,13 @@
+ul {
+    counter-reset: li-count;
+}
+
+li {
+    counter-increment: li-count;
+    margin: 10px;
+}
+
+li .counter:before{
+    content: counter(li-count) ': ';
+    font-weight: bold;
+}
